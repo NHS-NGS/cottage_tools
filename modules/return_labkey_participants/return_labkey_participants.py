@@ -3,7 +3,7 @@ This script targets the client api version 0.4.0 and later
 """
 import labkey
 
-def return_patient_demographics(GELID):
+def return_labkey_participants(GELID):
 	"""
 	Recieves a GEL proband ID
 	Using credentials in a .netrc file (~/.netrc) it queries labkey for that GELID returning:
@@ -21,5 +21,5 @@ def return_patient_demographics(GELID):
     return my_results
 
 if __name__ == "__main__":
-    labkey_results = read_labkey(112002698)
+    labkey_results = return_labkey_participants(112002698)
     print labkey_results
