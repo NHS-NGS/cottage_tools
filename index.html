@@ -1,0 +1,9 @@
+---
+Modules:
+  test: docs/test.md
+---
+for module in {% page.Modules %}
+  {% capture modulemd %}{% include {{ module }} %}{% endcapture %}
+  <section>
+    {{ modulemd | markdownify }}
+  </section>
