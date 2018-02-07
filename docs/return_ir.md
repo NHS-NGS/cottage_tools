@@ -1,5 +1,3 @@
----
----
 # return_ir
 ## Module function
 This function has two inputs, the Interpretation Request ID (an integer) and the version number for the interpretation request. These values are used to create the url to the interpretation request which is then accessed using the return_json function.
