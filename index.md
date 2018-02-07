@@ -1,9 +1,10 @@
 ---
   Modules:
-  - docs/return_json.md
-  - docs/return_ir.md
+  - return_json
+  - return_ir
 ---
 {% for module in page.Modules %}
-{% capture my_include %}{% include_relative {{ module }} %}{% endcapture %}
+{% capture my_include %}{% include_relative docs/{{ module }}.md %}{% endcapture %}
+## {{ module }}
 {{ my_include | markdownify }}
 {% endfor %}
