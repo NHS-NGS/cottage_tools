@@ -3,8 +3,6 @@
   - docs/test.md
 ---
 {% for module in page.Modules %}
-  {% capture modulemd %}{% include {{ module }} %}{% endcapture %}
-  <section>
-    {{ modulemd | markdownify }}
-  </section>
+  {% capture modulemd %} {% include {{ module }} %} {% endcapture %}
+  {{ modulemd | markdownify }}
 { % endfor %}
