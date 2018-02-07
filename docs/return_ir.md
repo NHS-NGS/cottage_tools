@@ -9,8 +9,7 @@ Two inputs are required:
  
 
 #### Usage 
-IR_json = return_ir.return_ir(self, Interpretation_Request_ID, IR_version)
-    eg IR_json = return_ir.return_ir(self, 100, 1)
+IR_json = return_ir.return_ir(self, Interpretation_Request_ID, IR_version) eg `IR_json = return_ir.return_ir(self, 100, 1)`
 
 ## How the function works 
 The interpretation request ID and the version number are incorporated into the url: https://cipapi.genomicsengland.nhs.uk/api/interpretationRequests/Interpretation_Request_ID/IR_version/
