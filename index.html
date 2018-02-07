@@ -2,9 +2,9 @@
 title: Hello world
 ---
 <h1>{{ page.title }}</h1>
-	<ul class="tools">
+	<ul class="posts">
 
 	  {% for tool in site.docs %}
-	    <li><span>{{ tool.name }}</span> » <a href="{{ tool.url }}" title="{{ tool.title }}">{{ tool.title }}</a></li>
+	    <li><span>{{ tool.name }}</span><a href="{{ tool.url }}" title="{{ tool.title }}">{{ tool.title }}</a></li>
 	  {% endfor %}
 	</ul>
