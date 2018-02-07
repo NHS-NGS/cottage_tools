@@ -3,5 +3,5 @@
   - docs/test.md
 ---
 {% for module in page.Modules %}
-<p>{{ module }}</p> 
+<p>{% include_relative {{ module }} %}</p> 
 {% endfor %}
