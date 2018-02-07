@@ -1,6 +1,5 @@
 ---
   Modules:
-  - docs/test.md
   - docs/return_json.md
   - docs/return_ir.md
 ---
