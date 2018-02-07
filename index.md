@@ -3,5 +3,6 @@
   - docs/test.md
 ---
 {% for module in page.Modules %}
-<p>{% include_relative {{ module }} %}</p> 
+{% capture my_include %}{% include_relative {{ module }} %}{% endcapture %}
+{{ my_include | markdownify }}
 {% endfor %}
